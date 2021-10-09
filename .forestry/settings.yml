@@ -23,7 +23,9 @@ file_template: ":filename:"
 build:
   preview_env:
   - HUGO_VERSION=0.82.1
+  - NODE_VERSION=14.18.0
   preview_output_directory: site
+  install_dependencies_command: npm install --prefix themes/default
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
